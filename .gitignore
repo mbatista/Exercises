@@ -1,0 +1,75 @@
+packages/
+obj/
+bin/
+csx/
+doc/
+TestResults/
+target/
+TestResult*.xml
+*.bak
+*.exe
+*.dll
+StyleCop.Cache
+
+#allow nunit core libs that don't have a nuget package
+!/lib/nunit/**/*.dll
+
+#include only common service content folder
+!lib/
+server/src/CloudService/**/*.exe
+server/src/CloudService/**/*.cmd
+
+# VS user-specific config
+*.user
+*.suo
+.vs/
+server/src/.vs/
+client/.vs/
+server/tools/**/.vs/
+
+# Emacs temp files
+*~
+\#*#
+
+# NCrunch files
+*.crunchsolution.cache
+_NCrunch_Microsoft.Skype.TNM
+
+# Generated config files
+package.config
+
+# Password settings should not be committed.
+**/config/passphrase.txt
+**/config/sqlcreds.txt
+**/config/environments.config
+**/config/service-test.config
+
+# Documentation links
+server/src/Documentation/content/
+
+# Azure publish settings file
+*.publishsettings
+
+# Directory used by the assembly binding logging
+Fusion/
+
+diagnostics.wadcfg
+
+# generated files
+server/src/BackgroundProcessesWorker/Monitoring/MdsMaConfigTemplate.xml
+server/src/QueueConsumer/Monitoring/MdsMaConfigTemplate.xml
+server/src/Service/Monitoring/MdsMaConfigTemplate.xml
+build_log.txt
+deployment/Express-Generated-Files
+deployment/DeploymentLogs
+server/src/CloudService/rcf/
+server/src/CloudService/ecf/
+client/src/TnmClient/TniODataServiceClient.cs
+AzCopy
+*.datasource
+*.orig
+*.userosscache
+*.nuget.props
+*.nuget.targets
+project.lock.json
+server2/_NCrunch_Tnm/
